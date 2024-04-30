@@ -1,7 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaJava, FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import hoobankImg from "@/public/hoobank.png"
 import primegenebiomedicalsolutions from "@/public/primegenebiomedicalsolutions.png"
 import gpt3 from "@/public/gpt3.png"
