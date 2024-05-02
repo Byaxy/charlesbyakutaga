@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import SectionHeading from "./SectionHeading";
 import useSectionInView from "@/lib/hooks/useSectionInView";
-import { FaPaperPlane, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { sendEmail } from "@/server-actions/sendEmail";
 import toast from "react-hot-toast";
 import SubmitBtn from "./SubmitBtn";
 
@@ -29,12 +29,22 @@ export default function Contact() {
   });
   const { errors, isSubmitting, isSubmitSuccessful } = formState;
 
+  const formRef = useRef();
+
   const onSubmit = async (data: FormInput) => {
-    try {
-      console.log(data);
-    } catch (error) {
-      console.error(error);
-    }
+    emailjs
+      .sendForm("service_qcwr5to", "template_0ctq4q1", formRef.current, {
+        publicKey: "VcMVKmWO1JNpGBaj7",
+      })
+      .then(
+        () => {
+          toast.success("Email sent successfully");
+        },
+        (error) => {
+          toast.error("Error sending email");
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   // Reset form to defaults on Successfull submission of data
@@ -42,7 +52,6 @@ export default function Contact() {
     if (isSubmitSuccessful) {
       reset();
     }
-    console.log(isSubmitSuccessful);
   }, [isSubmitSuccessful, reset]);
 
   return (
@@ -72,42 +81,42 @@ export default function Contact() {
         or use the form below
       </p>
       <form
+        ref={formRef}
         className="mt-10 flex flex-col gap-2"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
+        onSubmit={handleSubmit(onSubmit)}
       >
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="name"
           type="text"
-          required
           maxLength={35}
           placeholder="Your name"
+          {...register("name", { required: "Name is required" })}
         />
+        {errors.name && (
+          <span className="text-red-500 text-sm">{errors?.name.message}</span>
+        )}
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="email"
           type="email"
-          required
           maxLength={500}
           placeholder="Your email"
+          {...register("email", { required: "Email is required" })}
         />
+        {errors.email && (
+          <span className="text-red-500 text-sm">{errors?.email.message}</span>
+        )}
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="message"
           placeholder="Your message"
-          required
           maxLength={5000}
+          {...register("message", { required: "Message is required" })}
         />
-        <SubmitBtn />
+        {errors.message && (
+          <span className="text-red-500 text-sm">
+            {errors?.message.message}
+          </span>
+        )}
+        <SubmitBtn isSubmitting={isSubmitting} />
       </form>
     </motion.section>
   );
