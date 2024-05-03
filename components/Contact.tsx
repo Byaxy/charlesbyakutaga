@@ -29,22 +29,28 @@ export default function Contact() {
   });
   const { errors, isSubmitting, isSubmitSuccessful } = formState;
 
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
 
   const onSubmit = async (data: FormInput) => {
-    emailjs
-      .sendForm("service_qcwr5to", "template_0ctq4q1", formRef.current, {
-        publicKey: "VcMVKmWO1JNpGBaj7",
-      })
-      .then(
-        () => {
-          toast.success("Email sent successfully");
-        },
-        (error) => {
-          toast.error("Error sending email");
-          console.log("FAILED...", error.text);
+    if (!formRef.current) {
+      console.error("Form reference is null");
+      return;
+    }
+
+    try {
+      await emailjs.sendForm(
+        "service_qcwr5to",
+        "template_0ctq4q1",
+        formRef.current,
+        {
+          publicKey: "VcMVKmWO1JNpGBaj7",
         }
       );
+      toast.success("Email sent successfully");
+    } catch (error) {
+      console.error("Error sending email", error);
+      toast.error("Error sending email");
+    }
   };
 
   // Reset form to defaults on Successfull submission of data

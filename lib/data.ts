@@ -115,4 +115,5 @@ export const skillsData = [
   "PostgreSQL",
   "Prisma",
   "Framer Motion",
+  "REST APIs",
 ] as const;

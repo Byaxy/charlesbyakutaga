@@ -24,19 +24,20 @@ export default function About() {
           programming and software development
         </span>
         during my time at the University, where I pursued a{" "}
-        <span className="italic">
+        <span className="font-medium">
           Bachelor of Information Technology and Computing
         </span>
         . While initially fascinated by the world of programming, I faced
         limitations in resources and exposure that dampened my curiosity.
         However, the challenges posed by the COVID-19 pandemic reignited my
         interest in software development, prompting me to explore the field of{" "}
-        <span className="italic">Web Development</span>. Through self-guided
-        learning via YouTube tutorials and formal education at freecodecamp.org,
-        I acquired a certificate in{" "}
+        <span className="font-medium">Web Development</span>. Through
+        self-guided learning via YouTube tutorials and formal education at
+        freecodecamp.org, I acquired a certificate in{" "}
         <span className="underline">Responsive Web Design</span> and laid the
         foundation for my technical journey. Subsequently, my participation in
-        the <span className="italic">ALX Software Engineering Program </span>
+        the{" "}
+        <span className="font-medium">ALX Software Engineering Program </span>
         provided me with a comprehensive understanding of{" "}
         <span className="font-medium">
           Software Engineering principles, OOP, Algorithms & Data Structures,
@@ -49,7 +50,7 @@ export default function About() {
         completing the final sprint for certification, the program significantly
         enhanced my skills and expertise in software development. In November
         2023, I furthered my professional growth by enrolling in the
-        <span className="italic"> React Learning Program</span> by Andela,
+        <span className="font-medium"> React Learning Program</span> by Andela,
         supported by Meta and Pluralsight. This experience sharpened my
         abilities in developing React-based applications and reinforced my
         commitment to leveraging technology for positive change.
@@ -58,9 +59,9 @@ export default function About() {
       <p>
         When I'm not coding, I enjoy watching movies, and spending time with
         friends and family. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
+        <span className="italic">learning new things</span>. I am currently
         learning about{" "}
-        <span className="italic">
+        <span className="font-medium">
           Getting started with Google AI Studio, Gemini AI and NodeJS
         </span>
       </p>
