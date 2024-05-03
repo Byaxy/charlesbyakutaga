@@ -22,7 +22,7 @@ export default function About() {
         I was introduced to{" "}
         <span className="font-medium">
           programming and software development
-        </span>
+        </span>{" "}
         during my time at the University, where I pursued a{" "}
         <span className="font-medium">
           Bachelor of Information Technology and Computing

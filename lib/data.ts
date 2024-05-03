@@ -81,7 +81,7 @@ export const projectsData = [
   {
     title: "HooBank",
     description:
-      "I served as a web developer for this practice project, which is a single-page product landing page website for a bank product. The design was created by JS-Mastery using Figma, and the live website is hosted on Firebase. The website fully responsive and visually appealing on all devices.",
+      "I served as a web developer for this practice project, which is a single-page product landing page website for a bank product. The design was created by JS-Mastery using Figma, and the live website is hosted on Firebase. The website is fully responsive and visually appealing on all devices.",
     tags: ["React", "Tailwind CSS", "Firebase", "Figma"],
     imageUrl: hoobankImg,
     demoUrl: "https://modern-bank-web-app.web.app/",
@@ -90,7 +90,7 @@ export const projectsData = [
   {
     title: "GPT-3",
     description:
-      "I served as a web developer for this practice project, which is a single-page website of GPT-3, the predecessor of ChatGPT. An AI model by OpenAI that generates human-like text, completes language tasks, and generates code. The design was created by JS-Mastery using Figma, and the live website is hosted on Firebase. The website fully responsive and visually appealing on all devices.",
+      "I served as a web developer for this practice project, which is a single-page website of GPT-3, the predecessor of ChatGPT. An AI model by OpenAI that generates human-like text, completes language tasks, and generates code. The design was created by JS-Mastery using Figma, and the live website is hosted on Firebase. The website is fully responsive and visually appealing on all devices.",
     tags: ["React", "Tailwind CSS", "Firebase", "Figma"],
     imageUrl: gpt3,
     demoUrl: "https://openai-gpt3.web.app/",
