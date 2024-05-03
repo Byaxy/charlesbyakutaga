@@ -19,7 +19,7 @@ export default function Introduction() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[45rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex flex-col items-center justify-center">
         <div className="relative">
@@ -61,10 +61,9 @@ export default function Introduction() {
           animate={{ opacity: 1, y: 0 }}
         >
           Hello,
-          <span className="font-bold"> I'm Charles.</span> I'm a{" "}
-          <span className="font-bold">Software developer</span> with over{" "}
-          <span className="font-bold">3 years</span> of development experience.
-          I enjoy building{" "}
+          <span className="font-bold"> I'm Charles,</span> a{" "}
+          <span className="font-bold">Software developer</span> with a passion
+          for building{" "}
           <span className="italic">
             functional, modern, responsive, and user-friendly web applications
           </span>

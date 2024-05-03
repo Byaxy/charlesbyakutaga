@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Charles | Personal Portfolio",
   description:
-    "Charles Byakutaga is Front-end Software Developer with a passion for developing beautiful, responsive, and user-friendly web applications",
+    "Charles Byakutaga is a Software Developer with a passion for developing beautiful, responsive, and user-friendly web applications",
 };
 
 export default function RootLayout({
@@ -21,6 +21,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36`}
       >
