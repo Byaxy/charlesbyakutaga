@@ -92,7 +92,7 @@ export default function Introduction() {
 
           <a
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
-            href="/CV.pdf"
+            href="/Charles-CV.pdf"
             download
           >
             Download CV{" "}
