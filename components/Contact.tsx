@@ -39,11 +39,11 @@ export default function Contact() {
 
     try {
       await emailjs.sendForm(
-        "service_qcwr5to",
-        "template_0ctq4q1",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
         formRef.current,
         {
-          publicKey: "VcMVKmWO1JNpGBaj7",
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string,
         }
       );
       toast.success("Email sent successfully");
