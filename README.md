@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Website (CHARLES BYAKUTAGA)
 
-## Getting Started
+![Personal Portfolio Website](./public/portfolio.png)
 
-First, run the development server:
+This single-page portfolio website serves as a comprehensive showcase of my projects, skills, and professional experience. Designed with a clean and modern aesthetic, the site offers visitors a seamless browsing experience, allowing them to explore my key accomplishments, areas of expertise, and the value I can bring to potential employers or collaborators.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The website features a visually striking layout highlighting my most impactful projects, each accompanied by detailed descriptions, screenshots, and links to live demos or code repositories. Visitors can also discover my technical proficiencies, programming language and framework expertise, as well as my educational background and work history.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A standout feature of this portfolio is the ability for visitors to download my detailed professional resume directly from the website. This resume provides a comprehensive overview of my career summary, key qualifications, and employment history, giving potential stakeholders a complete understanding of my background and capabilities.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Overall, this portfolio website serves as a dynamic platform to showcase my skills, passion, and commitment to delivering exceptional results. It is a testament to my dedication to continuous learning and innovative problem-solving
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
 
-## Learn More
+<div align="center">
+     <img src="./public/desktop.png" alt="Desktop view" width="340" height="200" />
+     <img src="./public/tablet.png" alt="Tablet view" width="140" height="200" />
+     <img src="./public/mobile.png" alt="Mobile view" width="60" height="120" />
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+## Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React & Next.js(App Router)](https://nextjs.org/) - The React Framework for building Web Applications
+- [Typescript](https://www.typescriptlang.org/) - Strongly typed programming language that builds on JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - An Animation Library
+- [EmailJS](https://www.emailjs.com/) - Send Email Directly From Your Code
+- [Vercel](https://vercel.com/) - Frontend Cloud for hosting applications
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Live Website
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[charlesbyakutaga.vercel.app](https://charlesbyakutaga.vercel.app/)
