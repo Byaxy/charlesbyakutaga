@@ -28,7 +28,7 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[65rem] border border-black/5 overflow-hidden rounded-lg hover:bg-gray-200 transition py-8 px-5 flex gap-5 flex-col sm:flex-row sm:group-even:flex-row-reverse">
+      <section className="bg-gray-100 max-w-[70rem] border border-black/5 overflow-hidden rounded-lg hover:bg-gray-200 transition py-8 px-5 flex gap-5 flex-col sm:flex-row sm:group-even:flex-row-reverse">
         <div className="flex-1 flex items-center justify-center">
           <Image
             src={imageUrl}

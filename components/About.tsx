@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[48rem] text-center text-lg leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[54rem] text-center text-lg leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
@@ -47,9 +47,10 @@ export default function About() {
       </p>
       <p>
         Despite encountering personal obstacles that prevented me from
-        completing the final sprint for certification, the program significantly
-        enhanced my skills and expertise in software development. In November
-        2023, I furthered my professional growth by enrolling in the
+        completing the final short specialisation sprint for certification, the
+        program significantly enhanced my skills and expertise in software
+        development. In November 2023, I furthered my professional growth by
+        enrolling in the
         <span className="font-medium"> React Learning Program</span> by Andela,
         supported by Meta and Pluralsight. This experience sharpened my
         abilities in developing React-based applications and reinforced my
@@ -59,11 +60,7 @@ export default function About() {
       <p>
         When I'm not coding, I enjoy watching movies, and spending time with
         friends and family. I also enjoy{" "}
-        <span className="italic">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">
-          Getting started with Google AI Studio, Gemini AI and NodeJS
-        </span>
+        <span className="italic">learning new things</span>.
       </p>
     </motion.section>
   );
